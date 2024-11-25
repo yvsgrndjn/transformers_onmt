@@ -16,10 +16,11 @@ authors = [
 ]
 #dynamic = ["version"]
 dependencies = [
-    "opennmt-py@git+https://github.com/reymond-group/OpenNMT-py#71fb9f70e887589941be291b762a8bdad8aa9437",  
-    "torch==1.7.1",  # Add the specific PyTorch version you want
+    "opennmt-py@git+https://github.com/reymond-group/OpenNMT-py#295798ca9487c0e9b3f3fa25aa18bfee919be4b2", 
+    "torch==1.7.1",
     "torchvision==0.8.2",    
     ]
+
 
 [tool.hatch.version]
 #path = "src/__init__.py"
