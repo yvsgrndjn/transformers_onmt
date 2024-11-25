@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 # https://peps.python.org/pep-0621/
 [project]
 name = "transformers_onmt"
-description = "Package to evaluate the performance of an OpenNMT-py transformer model"
+description = "Package to preprocess the data, train and perform inference of an OpenNMT-py transformer model"
 version = '0.0.1'
 readme = "README.md"
 requires-python = ">=3.8.16"
@@ -16,7 +16,9 @@ authors = [
 ]
 #dynamic = ["version"]
 dependencies = [
-    "opennmt-py@git+https://github.com/reymond-group/OpenNMT-py#71fb9f70e887589941be291b762a8bdad8aa9437",     
+    "opennmt-py@git+https://github.com/reymond-group/OpenNMT-py#71fb9f70e887589941be291b762a8bdad8aa9437",  
+    "torch==1.7.1",  # Add the specific PyTorch version you want
+    "torchvision==0.8.2",    
     ]
 
 [tool.hatch.version]
